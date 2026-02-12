@@ -1,0 +1,15 @@
+[project]
+name = "agent-sdk"
+version = "0.1.0"
+description = "Lightweight agent SDK for application error and behavior monitoring"
+authors = [{ name = "Your Team" }]
+requires-python = ">=3.9"
+
+dependencies = [
+  "requests>=2.28,<3.0"
+]
+
+[project.optional-dependencies]
+flask = ["flask>=2.2"]
+fastapi = ["fastapi>=0.95"]
+django = ["django>=3.2"]

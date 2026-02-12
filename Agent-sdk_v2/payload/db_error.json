@@ -1,0 +1,17 @@
+{
+  "category": "DATABASE",
+  "type": "DB_ERROR",
+  "severity": "HIGH",
+  "status": "FAILURE",
+
+  "metrics": {
+    "duration_ms": 840
+  },
+
+  "data": {
+    "query_type": "INSERT",
+    "table": "orders",
+    "exception_type": "IntegrityError",
+    "message": "Duplicate key violation"
+  }
+}

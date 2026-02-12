@@ -1,0 +1,16 @@
+{
+  "category": "APPLICATION",
+  "type": "ROUTING_ERROR",
+  "severity": "MEDIUM",
+  "status": "FAILURE",
+
+  "metrics": {
+    "duration_ms": 45
+  },
+
+  "data": {
+    "path": "/invalid-endpoint",
+    "method": "GET",
+    "status_code": 404
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "category": "NETWORK",
+  "type": "HTTP_ERROR",
+  "severity": "MEDIUM",
+  "status": "FAILURE",
+
+  "metrics": {
+    "duration_ms": 320
+  },
+
+  "data": {
+    "method": "GET",
+    "url": "https://api.payment.com/pay",
+    "status_code": 500,
+    "response_size": 1240
+  }
+}

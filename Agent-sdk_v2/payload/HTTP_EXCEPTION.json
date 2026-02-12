@@ -1,0 +1,18 @@
+{
+  "category": "NETWORK",
+  "type": "HTTP_EXCEPTION",
+  "severity": "HIGH",
+  "status": "FAILURE",
+
+  "metrics": {
+    "duration_ms": 2100
+  },
+
+  "data": {
+    "method": "POST",
+    "url": "https://api.payment.com/pay",
+    "exception_type": "ReadTimeout",
+    "message": "Connection timed out",
+    "retry_count": 1
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agent Monitoring Dashboard</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #111;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #00ffcc;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #00ffcc;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .card {
+            margin: 20px auto;
+            padding: 15px;
+            width: 60%;
+            border-radius: 8px;
+        }
+
+        .success {
+            background: #004d40;
+        }
+
+        .error {
+            background: #5c0000;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🚀 Agent SDK Test Dashboard</h1>
+
+    <button onclick="runTests()">Run All Tests</button>
+
+    <div id="results"></div>
+
+<script>
+function runTests() {
+    document.getElementById("results").innerHTML = "Running tests...";
+
+    fetch("/run-tests")
+        .then(res => res.json())
+        .then(data => {
+            let html = "";
+
+            for (let key in data) {
+                let status = data[key].status;
+                let cls = status === 200 ? "success" : "error";
+
+                html += `
+                    <div class="card ${cls}">
+                        <h3>Route: /${key}</h3>
+                        <p>Status: ${status}</p>
+                        <p>Message: ${data[key].message}</p>
+                    </div>
+                `;
+            }
+
+            document.getElementById("results").innerHTML = html;
+        });
+}
+
+// Auto run on page load
+window.onload = runTests;
+</script>
+
+</body>
+</html>
