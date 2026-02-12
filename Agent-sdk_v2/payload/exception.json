@@ -1,0 +1,18 @@
+{
+  "category": "APPLICATION",
+  "type": "EXCEPTION",
+  "severity": "HIGH",
+  "status": "FAILURE",
+
+  "metrics": {},
+
+  "data": {
+    "error_type": "ZeroDivisionError",
+    "message": "division by zero",
+    "file": "app.py",
+    "line": 42,
+    "function": "calculate_total",
+    "stacktrace": "...",
+    "handled": false
+  }
+}

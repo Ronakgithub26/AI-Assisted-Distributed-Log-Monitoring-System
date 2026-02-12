@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "sdk_version": "2.0.0",
+    "schema_version": "1.0",
+    "timestamp": "2026-02-12T19:45:12.123Z",
+    "trace_id": "8f3c1e7c-4f7d-4b4a-9a8b-2a1b7f9d1234",
+    "project": "demo-app",
+    "environment": "production"
+  },
+
+  "identity": {
+    "api_key": "xxxxx",
+    "hostname": "server-01",
+    "ip": "192.168.1.10",
+    "region": "ap-south-1",
+    "os": "Windows",
+    "os_version": "10",
+    "python_version": "3.11.8",
+    "process_id": 1234,
+    "app_version": "1.2.3",
+    "instance_id": "instance-abc-01"
+  },
+
+  "event": {
+    "category": "APPLICATION",
+    "type": "HTTP_CALL",
+    "severity": "MEDIUM",
+    "status": "FAILURE",
+
+    "metrics": {
+      "duration_ms": 420
+    },
+
+    "data": {
+      "method": "GET",
+      "url": "https://api.payment.com/pay",
+      "status_code": 500,
+      "retry_count": 1
+    }
+  }
+}
+

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="card p-4 shadow">
+    <h3>{{ product.name }}</h3>
+    <h4>₹{{ product.price }}</h4>
+    <a href="/add-to-cart/{{ id }}" class="btn btn-success">Add to Cart</a>
+</div>
+
+{% endblock %}

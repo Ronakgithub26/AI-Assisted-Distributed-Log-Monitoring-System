@@ -1,0 +1,62 @@
+Metadata-Version: 2.4
+Name: agent-telemetry-sdk
+Version: 2.0.0
+Summary: Structured, secure telemetry and monitoring SDK with anomaly-ready schema.
+Author-email: Your Name <your-email@example.com>
+License-Expression: MIT
+Keywords: monitoring,telemetry,apm,logging,observability,sdk
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.28.0
+Provides-Extra: flask
+Requires-Dist: flask>=2.0.0; extra == "flask"
+Provides-Extra: fastapi
+Requires-Dist: fastapi>=0.100.0; extra == "fastapi"
+Requires-Dist: starlette>=0.27.0; extra == "fastapi"
+Provides-Extra: django
+Requires-Dist: django>=3.2; extra == "django"
+Provides-Extra: sqlalchemy
+Requires-Dist: sqlalchemy>=1.4; extra == "sqlalchemy"
+
+# Agent Telemetry SDK (v2.0.0)
+
+Structured, secure, multi-framework telemetry and monitoring SDK for Python applications.
+
+This SDK provides enterprise-grade monitoring capabilities including:
+
+- Exception tracking
+- Incoming & outgoing HTTP monitoring
+- Database query monitoring
+- Structured logging capture
+- Performance tracking
+- HMAC-secured transport
+- Retry with exponential backoff
+- AI-ready structured event schema
+
+---
+
+## 🚀 Features
+
+- ✅ Structured global event schema (AI-ready)
+- ✅ Multi-framework support (Flask, FastAPI, Django)
+- ✅ SQLAlchemy database monitoring
+- ✅ Automatic severity classification
+- ✅ Identity enrichment (hostname, IP, runtime info)
+- ✅ HMAC request signing (secure transport)
+- ✅ Retry with exponential backoff
+- ✅ Batch metadata support
+- ✅ Production-ready architecture
+
+---
+
+## 📦 Installation
+
+Basic install:
+
+```bash
+pip install agent-telemetry-sdk
